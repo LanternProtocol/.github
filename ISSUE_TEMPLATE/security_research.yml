@@ -1,0 +1,43 @@
+name: Security research
+description: Discuss non-sensitive security research, hardening, or threat modeling work
+title: "[Security Research]: "
+labels: ["area:security", "type:research", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this template for active vulnerabilities, exploit details, secrets, or sensitive operational findings. Follow SECURITY.md for responsible disclosure.
+  - type: textarea
+    id: topic
+    attributes:
+      label: Research topic
+      description: What security, resilience, or abuse-resistance topic should be investigated?
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Why does this matter to Lantern Protocol?
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed research or validation method
+    validations:
+      required: false
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: Example outputs include a threat model update, test vector, ADR, benchmark, mitigation, or documentation change.
+    validations:
+      required: false
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure check
+      options:
+        - label: This issue does not contain active exploit details, secrets, or sensitive vulnerability information.
+          required: true
