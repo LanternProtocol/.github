@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible defect
+title: "[Bug]: "
+labels: ["type:bug", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Include enough detail for maintainers to reproduce and evaluate impact.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide exact steps, commands, inputs, or environment details.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Include protocol, security, provenance, evidence, or operational impact if relevant.
+    validations:
+      required: false
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security check
+      options:
+        - label: This is not a vulnerability or sensitive security issue.
+          required: true
