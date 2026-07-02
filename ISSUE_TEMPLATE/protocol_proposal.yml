@@ -1,0 +1,47 @@
+name: Protocol proposal
+description: Propose a change to protocol behavior, semantics, schemas, trust boundaries, or verification
+title: "[Protocol Proposal]: "
+labels: ["type:proposal", "area:protocol", "status:needs-triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What protocol-level change are you proposing?
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this needed?
+    validations:
+      required: true
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Proposed semantics
+      description: Describe the intended behavior, constraints, schema changes, verification behavior, or interoperability impact.
+    validations:
+      required: true
+  - type: textarea
+    id: threat-model
+    attributes:
+      label: Threat model impact
+      description: How does this affect spoofing, replay, forgery, provenance, auditability, or adversarial manipulation?
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration
+      description: Note breaking changes, versioning, downgrade risks, or migration concerns.
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: How should this be tested, specified, or proven?
+    validations:
+      required: false
